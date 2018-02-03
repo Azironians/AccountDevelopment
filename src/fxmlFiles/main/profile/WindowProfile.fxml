@@ -16,19 +16,19 @@
         <fx:include fx:id="paneStatistics" source="WindowStatistic.fxml" layoutX="348.0" layoutY="210.0"/>
         <Pane fx:id="paneHeroes" layoutX="525.0" layoutY="202.0" prefHeight="246.0" prefWidth="229.0">
             <children>
-                <ImageView fx:id="Devourer" fitHeight="246.0" fitWidth="297.0" pickOnBounds="true" preserveRatio="true"
+                <ImageView fx:id="devourer" fitHeight="246.0" fitWidth="297.0" pickOnBounds="true" preserveRatio="true"
                            visible="false">
                     <image>
                         <Image url="@../../../resources/heroes/devourer/face/devourer.png"/>
                     </image>
                 </ImageView>
-                <ImageView fx:id="LordVamp" fitHeight="246.0" fitWidth="297.0" pickOnBounds="true" preserveRatio="true"
+                <ImageView fx:id="lordVamp" fitHeight="246.0" fitWidth="297.0" pickOnBounds="true" preserveRatio="true"
                            visible="false">
                     <image>
                         <Image url="@../../../resources/heroes/lordVampire/face/lordVampire.png"/>
                     </image>
                 </ImageView>
-                <ImageView fx:id="OrcBasher" fitHeight="246.0" fitWidth="297.0" pickOnBounds="true" preserveRatio="true"
+                <ImageView fx:id="orcBasher" fitHeight="246.0" fitWidth="297.0" pickOnBounds="true" preserveRatio="true"
                            visible="false">
                     <image>
                         <Image url="@../../../resources/heroes/orcBash/face/orcBash.png"/>
@@ -50,7 +50,7 @@
             </image>
         </ImageView>
         <ImageView fx:id="buttonOnLogOut" fitHeight="71.0" fitWidth="156.0" layoutX="1110.0" layoutY="17.0"
-                   pickOnBounds="true" preserveRatio="true" visible="false">
+                   pickOnBounds="true" preserveRatio="true" visible="false" onMouseExited="#buttonOnLogOutExited" onMouseClicked="#buttonOnLogOutClicked">
             <image>
                 <Image url="@../../../resources/Buttons/ButtonOnLogOut.png"/>
             </image>
@@ -63,19 +63,19 @@
         </ImageView>
         <ImageView fx:id="buttonOnShowStatistics" fitHeight="71.0" fitWidth="304.0" layoutX="854.0" layoutY="16.0"
                    pickOnBounds="true" preserveRatio="true" visible="false"
-                   onMouseExited="#buttonOnShowStatisticsExited" onMouseClicked="#buttonOnShowStatisticsCliced">
+                   onMouseExited="#buttonOnShowStatisticsExited" onMouseClicked="#buttonOnShowStatisticsClicked">
             <image>
                 <Image url="@../../../resources/Buttons/ButtonOnStatistics.png"/>
             </image>
         </ImageView>
         <ImageView fx:id="buttonOffLogOut" fitHeight="71.0" fitWidth="156.0" layoutX="1110.0" layoutY="17.0"
-                   pickOnBounds="true" preserveRatio="true">
+                   pickOnBounds="true" preserveRatio="true" onMouseEntered="#buttonOffLogOutEntered">
             <image>
                 <Image url="@../../../resources/Buttons/ButtonOffLogOut.png"/>
             </image>
         </ImageView>
         <Text fx:id="textFavouriteHero" fill="#24c6eb" layoutX="364.0" layoutY="173.0" strokeType="OUTSIDE"
-              strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="551.3330078125">
+              strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="551.3330078125" text="Любииый герой ">
             <font>
                 <Font size="34.0"/>
             </font>

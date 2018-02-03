@@ -76,6 +76,7 @@ public final class ControllerAuthorization implements Initializable, Controller 
     ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
     //Кнопка "Вход":
+    // FIXME: 03.02.2018 return to authorization panel
     public final void buttonSignInClicked() {
         final AGate.Endeavour endeavour = aGate.isAuthorizationSuccessful(textFieldSignIn, passwordFieldSignIn);
         if (endeavour.isSuccessful()) {
@@ -155,5 +156,6 @@ public final class ControllerAuthorization implements Initializable, Controller 
 
     @Override
     public final void appearance() {
+
     }
 }

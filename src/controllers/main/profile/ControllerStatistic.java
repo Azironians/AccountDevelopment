@@ -38,4 +38,8 @@ public class ControllerStatistic {
         buttonOffCloseStatistics.setVisible(true);
         buttonOnCloseStatistics.setVisible(false);
     }
+    public void buttonOnCloseStatisticsClicked(){
+        paneStatistic.setVisible(false);
+    }
+
 }

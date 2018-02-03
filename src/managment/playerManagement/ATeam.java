@@ -1,9 +1,13 @@
 package managment.playerManagement;
 
+import lombok.Getter;
+import lombok.extern.slf4j.Slf4j;
 import org.jetbrains.annotations.Contract;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public final class ATeam {
-    
+
     private Player currentPlayer;
     private Player alternativePlayer;
     private int turn;
