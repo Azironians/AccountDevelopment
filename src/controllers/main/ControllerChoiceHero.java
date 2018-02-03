@@ -54,8 +54,6 @@ public class ControllerChoiceHero implements Initializable, Controller {
 
 
 
-
-
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         appearance();
